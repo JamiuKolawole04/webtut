@@ -1,0 +1,378 @@
+ body {
+     background-color: #ebecef;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+  .left {
+    padding: 0 14px 0px 150px;
+  }
+
+  button.signUp {
+      background-color: #ff6e30;
+      border: 1px solid #ff6e30;
+      border-radius: 12px;
+      color: white;
+      padding: 12px;
+      width: 120%;
+
+  }
+
+  /*
+
+ ol {
+     margin: 0;
+     padding: 0;
+     text-align: center;
+
+ }
+
+ li {
+     float: left;
+     list-style-type: none;
+ }
+
+ li a {
+     display: block;
+     text-align: center;
+     padding:16px  25px;
+ }
+ */
+
+ .grid {
+     display: grid;
+     grid-template-columns: 140px 140px 120px 120px 120px 300px 80px 80px;
+     align-items: center;
+ }
+
+ li {
+     list-style-type: none;
+     font-weight: bold;
+ }
+
+ img.logo1 {
+     width: 30px;
+ }
+
+ span {
+     font-weight: bold;
+     font-size: 28px;
+     color: #20282f;
+
+ }
+ .dot {
+     color: #ff5d1d;
+ }
+ .top {
+     margin-top: 16px;
+     color: #72787f;
+     font-size: 11px;
+ }
+
+ .flex {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+ }
+
+ h5 {
+     text-transform: uppercase;
+     color: #6987b0;
+     font-size: 9px;
+     margin-top: 200px;
+ }
+ 
+ h2 {
+     font-weight: bold;
+     font-size: 64px;
+     color: #272e35;
+     margin-top: 8px;
+ }
+ .col {
+     display: flex;
+     flex-direction: column;
+ }
+  .img2 {
+      width: 550px;
+      height: 700px;
+  }
+  .organize {
+      display: block;
+      font-size: 12px;
+      font-weight: lighter;
+      margin-top: 18px;
+      font-size: 18px;
+      color: #53595e;
+  }
+
+  .btn-2 {
+      border: 1px solid #ff6e30;
+      background-color: #ff6e30;
+      padding: 12px;
+      border-radius: 12px;
+      color: white;
+      text-align: center;
+      width: 90px;
+  }
+  .btn-3 {
+      border: 1.5px solid #272e35;
+      padding: 12px;
+      border-radius: 12px;
+      margin-left: 24px;
+      width: 200px;
+      text-align: center;
+      color: #767a7f;
+      font-weight: bolder;
+  }
+  .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #80878d;
+      font-weight: bold;
+      font-size: 12px;
+  }
+
+  .flex2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-right: 40px;
+      align-items: center;
+      margin-top: 28px;
+  }
+  .invisible {
+      display: none;
+  }
+
+  .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+  }
+
+  .dropdown {
+      display: inline-block;
+      position: relative;
+  }
+  .dropdown-content {
+      position: absolute;
+      display: none;
+      background-color: #ff6e30;
+      width: 150px;
+  }
+
+  .dropdown-content a {
+      padding: 12px;
+      text-decoration: none;
+      display: block;
+      font-size: 12px;
+      color: black;
+
+  }
+
+
+  .dropdown-content a:hover{
+    background-color: #312c2c;
+    color: burlywood;
+  }
+
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+
+  .toto {
+      color: red;
+      font-size: 25px;
+  }
+
+  @media screen and (max-width : 970px) {
+      .left {
+          padding-left: 19px;
+      }
+      .grid {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+      }
+
+      h2 {
+          font-size: 28px;
+      }
+
+      .organize {
+          font-size:10px;
+      }
+      .img2 {
+          width: 400px;
+          height: 450px;
+      }
+  }
+
+  @media screen and (max-width : 770px) {
+      .grid {
+          display: flex;
+          flex-flow: row;
+          justify-content: space-between;
+      }
+
+      .img2 {
+          width: 350px;
+      }
+  }
+
+  @media only screen and (max-width : 1150px) and (min-width : 990px) {
+      .left {
+          padding-left: 19px;
+      }
+      .grid {
+          display: grid;
+          grid-template-columns: 120px  80px 70px 70px 70px 270px 70px 70px;
+      }
+
+      h2 {
+          font-size: 48px;
+      }
+
+      .img2 {
+          width: 400px;
+          height: 600px;
+      }
+
+      .btn-2 {
+          width: 80px;
+          padding: 9px;
+          text-align: center;
+      }
+
+      .btn-3 {
+          width: 180px;
+      }
+      button.signUp {
+        width: 80px;
+      }
+
+      .center {
+          margin-top: 80px;
+      }
+  }
+
+  @media screen and (max-width : 420px)  {
+      .left {
+          padding-left: 18px;
+      }
+      .grid {
+        display: none;
+      }
+    h5 {
+        margin-left: 60px;
+        margin-top: 0;
+
+    }
+      h2 {
+          font-size: 30px;
+      }
+      .flex {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .col {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-left: 58px;
+      }
+
+      .btn-2 {
+          margin-left: 58px;
+          padding: 16px;
+          font-size: 9px;
+          width: 70px;
+      }
+
+      .btn-3 {
+          margin-left: 25px;
+          width: 90px;
+          font-size: 8px;
+          padding: 8px;
+      }
+      
+      .img2 {
+          width: 200px;
+          height: 200px;
+      }
+       .flex2 {
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+       }
+
+       .invisible {
+           display: block;
+           
+       }
+
+       .center {
+           margin-left: 58px;
+       }
+  }
+
+  @media only screen and (min-width : 490px) and (max-width : 550px) {
+
+    .grid {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+
+    .grid > li {
+        font-size: 12px;
+    }
+      .img2 {
+          width: 180px;
+      }
+
+      .btn-2 {
+          width: 20%;
+      }
+
+      .btn-3
+       {
+           width: 40%;
+       }
+  }
+
+  @media screen and (max-width : 300px) {
+      .btn-2 {
+          margin-left: 62px;
+          padding: 9px;
+          width: 95px;
+          
+      }
+
+      .btn-3 {
+          margin: 12px 0 0 62px;
+          width: 95px;
+        
+      }
+
+      img.img2 {
+          margin-left: 62px;
+      }
+
+      .center {
+          font-size: 12px;
+          margin-left: 62px;
+
+      }
+      .flex2 {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+  }
+
+  
